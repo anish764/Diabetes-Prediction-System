@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes App by Vinesh Ryapak</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Diabetes App by Vinesh Ryapak</h1>
+    <form method="POST">
+      <label for="fs">Fasting Sugar</label>
+      <input type="number" step="any" id="fs" name="fs" placeholder="Enter fasting sugar value" min="70" required />
+      <br>
+      <label for="fu">Frequent Urination in Fasting?</label>
+      <div class="radio-group">
+        <input type="radio" id="yes" name="fu" value="1" checked="True"/>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="fu" value="0" />
+        <label for="no">No</label>
+      </div>
+      <input type="submit" value="Predict Diabetes" />
+    </form>
+    <h2 class="message">{{ msg }}</h2>
+  </div>
+</body>
+</html>
